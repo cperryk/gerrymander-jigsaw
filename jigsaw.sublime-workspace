@@ -1,0 +1,1196 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"time",
+				"timeCount"
+			],
+			[
+				"fb",
+				"facebookShare"
+			],
+			[
+				"you_solv",
+				"you_solved_share_btns"
+			],
+			[
+				"puzz",
+				"puzzle_solved"
+			],
+			[
+				"interactive",
+				"interactive_nav_time"
+			],
+			[
+				"is",
+				"is_solved"
+			],
+			[
+				"state",
+				"state_code"
+			],
+			[
+				"puzzle",
+				"puzzle_disclaimer"
+			],
+			[
+				"cur",
+				"current_state"
+			],
+			[
+				"hover",
+				"hover_district"
+			],
+			[
+				"marker",
+				"markerHoverOut"
+			],
+			[
+				"selec",
+				"selected_locations"
+			],
+			[
+				"dist",
+				"district_code"
+			],
+			[
+				"twitter",
+				"twitterShare"
+			],
+			[
+				"distric",
+				"district_set"
+			],
+			[
+				"mouseo",
+				"mouseovered"
+			],
+			[
+				"mouse",
+				"mouseovered"
+			],
+			[
+				"out",
+				"out_y"
+			],
+			[
+				"raphael",
+				"raphael_obj"
+			],
+			[
+				"raph",
+				"int_raphael_canvas"
+			],
+			[
+				"pageX",
+				"pageXOffset"
+			],
+			[
+				"pageY",
+				"pageYOffset"
+			],
+			[
+				"rap",
+				"raphael_object"
+			],
+			[
+				"moveSha",
+				"moveShape"
+			],
+			[
+				"end_",
+				"end_coords"
+			],
+			[
+				"start",
+				"start_coords"
+			],
+			[
+				"canv",
+				"canvas_jquery"
+			],
+			[
+				"can",
+				"canvas_jquery"
+			],
+			[
+				"print",
+				"printed_shapes"
+			],
+			[
+				"move",
+				"moveShapeToCoords"
+			],
+			[
+				"getB",
+				"getBBox"
+			],
+			[
+				"faux",
+				"fauxGetBbox"
+			],
+			[
+				"high",
+				"highestX"
+			],
+			[
+				"get",
+				"getBBox"
+			],
+			[
+				"rapha",
+				"int_raphael_canvas"
+			],
+			[
+				"trans",
+				"transform_string2"
+			],
+			[
+				"tran",
+				"transform_string1"
+			],
+			[
+				"curre",
+				"current_state"
+			],
+			[
+				"curr",
+				"current_state"
+			],
+			[
+				"draw",
+				"drawStateOutline"
+			],
+			[
+				"intera",
+				"interactiveName"
+			],
+			[
+				"puzzl",
+				"puzzle_begin"
+			],
+			[
+				"inter",
+				"interactive_footer"
+			],
+			[
+				"pus",
+				"puzzle_solved"
+			],
+			[
+				"fill",
+				"fill-opacity"
+			],
+			[
+				"canvas",
+				"canvas_jquery"
+			],
+			[
+				"showAt",
+				"showAtCoordinates"
+			],
+			[
+				"district",
+				"district_code"
+			],
+			[
+				"distr",
+				"district_code"
+			],
+			[
+				"distri",
+				"district_code"
+			],
+			[
+				"scale",
+				"scale_string"
+			],
+			[
+				"PUZZL",
+				"PUZZLE_HEIGHT"
+			],
+			[
+				"PUZ",
+				"PUZZLE_HEIGHT"
+			],
+			[
+				"PUZZLE",
+				"PUZZLE_WIDTH"
+			],
+			[
+				"check",
+				"check_code"
+			],
+			[
+				"prot",
+				"prototype"
+			],
+			[
+				"stroke",
+				"stroke-width"
+			],
+			[
+				"stae",
+				"stateCode"
+			],
+			[
+				"new",
+				"new_coords"
+			],
+			[
+				"valid",
+				"validator"
+			],
+			[
+				"valida",
+				"validators"
+			],
+			[
+				"validat",
+				"validation_point"
+			],
+			[
+				"moveShape",
+				"moveShapeToCoords"
+			],
+			[
+				"current",
+				"current_coords"
+			],
+			[
+				"vali",
+				"validationPoint"
+			],
+			[
+				"end",
+				"end_coords"
+			],
+			[
+				"selected",
+				"selected_shapes"
+			],
+			[
+				"unselect",
+				"unselectShapes"
+			],
+			[
+				"select",
+				"selectShape"
+			],
+			[
+				"printed",
+				"printed_shapes"
+			],
+			[
+				"remove",
+				"removeDragListener"
+			],
+			[
+				"addHover",
+				"addHoverListener"
+			],
+			[
+				"addHo",
+				"addHoverListener"
+			],
+			[
+				"getTime",
+				"getTimeStringLong"
+			],
+			[
+				"curren",
+				"currentState"
+			],
+			[
+				"seconds",
+				"secondsToMMSS"
+			],
+			[
+				"Interactive",
+				"Interactive_Timer"
+			],
+			[
+				"locat",
+				"locationIndex"
+			],
+			[
+				"clear",
+				"clearInterval"
+			],
+			[
+				"INter",
+				"Interactive_Timer"
+			],
+			[
+				"store",
+				"stored_locations"
+			],
+			[
+				"minutes",
+				"minutesString"
+			],
+			[
+				"interact",
+				"interactive_nav_btn"
+			],
+			[
+				"e",
+				"e8e8e8"
+			],
+			[
+				"offset",
+				"offsetX"
+			],
+			[
+				"off",
+				"offsetX"
+			],
+			[
+				"rand",
+				"random"
+			],
+			[
+				"compare",
+				"compare_shape"
+			],
+			[
+				"ghost_Trans",
+				"ghost_transform_path"
+			],
+			[
+				"compare_transfo",
+				"compare_transform_path"
+			],
+			[
+				"shape",
+				"shapeBBox"
+			],
+			[
+				"ghost",
+				"ghostScaleString"
+			],
+			[
+				"add",
+				"addSelectionListener"
+			],
+			[
+				"max",
+				"max_y"
+			],
+			[
+				"val",
+				"validators"
+			],
+			[
+				"randomizeS",
+				"randomizeShape"
+			],
+			[
+				"tarn",
+				"transform_string1"
+			],
+			[
+				"enc",
+				"endscoords"
+			],
+			[
+				"random",
+				"random_coords"
+			],
+			[
+				"transfor",
+				"transform_string"
+			],
+			[
+				"str_rep",
+				"str_replace"
+			],
+			[
+				"question",
+				"question_index"
+			],
+			[
+				"data",
+				"dataSet"
+			],
+			[
+				"loca",
+				"locationVar"
+			],
+			[
+				"corr",
+				"correct_answer"
+			],
+			[
+				"average",
+				"average_score"
+			],
+			[
+				"sel",
+				"mysqli_select_db"
+			],
+			[
+				"correct",
+				"correct_here"
+			],
+			[
+				"answer",
+				"answeredAlready"
+			],
+			[
+				"starbucks",
+				"starbucks_marker_icon"
+			],
+			[
+				"remo",
+				"removeClass"
+			],
+			[
+				"qu",
+				"quiz_UI"
+			],
+			[
+				"questo",
+				"question_index"
+			],
+			[
+				"city",
+				"city_lat_lons"
+			],
+			[
+				"cit",
+				"city_lat_lons"
+			],
+			[
+				"quest",
+				"question_index"
+			],
+			[
+				"answers",
+				"answers_remaining"
+			],
+			[
+				"ans",
+				"answers_available"
+			],
+			[
+				"answ",
+				"answers_remaining"
+			],
+			[
+				"str_re",
+				"str_replace"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "htdocs/jigsaw.js",
+			"settings":
+			{
+				"buffer_size": 31700,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "htdocs/jigsaw.css",
+			"settings":
+			{
+				"buffer_size": 3721,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "htdocs/index.php",
+			"settings":
+			{
+				"buffer_size": 10733,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 267.0,
+		"selected_items":
+		[
+			[
+				"mini",
+				"Minify Javascript to file"
+			],
+			[
+				"minifi",
+				"Minify Javascript to file"
+			],
+			[
+				"minif",
+				"Minify Javascript"
+			],
+			[
+				"mni",
+				"Minify Javascript to file"
+			],
+			[
+				"mniif",
+				"Minify Javascript to file"
+			],
+			[
+				"select",
+				"ColorSchemeSelector: Select Color Scheme"
+			],
+			[
+				"next color",
+				"ColorSchemeSelector: Next Color Scheme"
+			],
+			[
+				"scheme",
+				"SchemeCycler : Next Color Scheme"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"colorsche",
+				"ColorSchemeSelector: Random Color Scheme"
+			],
+			[
+				"color scheme",
+				"ColorSchemeSelector: Random Color Scheme"
+			],
+			[
+				"color ",
+				"ColorSchemeSelector: Next Color Scheme"
+			],
+			[
+				"seelct co",
+				"ColorSchemeSelector: Select Color Scheme"
+			],
+			[
+				"select color",
+				"ColorSchemeSelector: Select Color Scheme"
+			],
+			[
+				"brows",
+				"Preferences: Browse Packages"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"no",
+				"Snippet: noHighlight"
+			],
+			[
+				"convertto",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"slatered",
+				"Snippet: slatered"
+			],
+			[
+				"convert to t",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"convert",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"forma",
+				"Format: Javascript"
+			],
+			[
+				"format",
+				"Format: Javascript"
+			],
+			[
+				"slater",
+				"Snippet: slatered"
+			],
+			[
+				"convert to tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"indents",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"to tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"package",
+				"Package Control: Enable Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"makel",
+				"Snippet: makeLeafletMap"
+			],
+			[
+				"leaf",
+				"Snippet: makeLeafletMap"
+			],
+			[
+				"scrambe",
+				"Snippet: scrambleArray"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 153.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/editorial-interactives/13-08/jigsaw/htdocs/jigsaw.js",
+		"/Applications/MAMP/htdocs/editorial-interactives/13-08/jigsaw/htdocs/jigsaw-min.js",
+		"/Applications/MAMP/htdocs/editorial-interactives/13-08/jigsaw/htdocs/jigsaw.css",
+		"/Applications/MAMP/htdocs/editorial-interactives/13-08/jigsaw/convert_data.py",
+		"/Applications/MAMP/htdocs/editorial-interactives/13-08/jigsaw/htdocs/selected_locations.js",
+		"/Applications/MAMP/htdocs/editorial-interactives/13-08/jigsaw/htdocs/index.php",
+		"/Applications/MAMP/htdocs/editorial-interactives/13-08/jigsaw/htdocs/jigsaw-ghosts.js",
+		"/Users/kirkcp/Library/Application Support/Sublime Text 2/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/kirkcp/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/kirkcp/Library/Application Support/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Applications/MAMP/htdocs/editorial-interactives/13-08/jigsaw/jigsaw.sublime-project",
+		"/Users/kirkcp/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Applications/MAMP/htdocs/editorial-interactives/interactive_server_scripts/scores/addScore.php",
+		"/Applications/MAMP/htdocs/editorial-interactives/13-07/starbucks/htdocs/starbucks.css",
+		"/Users/kirkcp/Documents/Templates/new_interactive/htdocs/droneStrikes.js",
+		"/Users/kirkcp/Documents/Templates/new_interactive/htdocs/index.php",
+		"/Users/kirkcp/Documents/Templates/new_interactive/htdocs/droneStrikes.css",
+		"/Applications/MAMP/htdocs/editorial-interactives/13-02/drones/htdocs/index.php",
+		"/Applications/MAMP/htdocs/editorial-interactives/13-02/drones/htdocs/droneStrikes.js",
+		"/Applications/MAMP/htdocs/editorial-interactives/13-02/slideshow/htdocs/slideshow.js",
+		"/Applications/MAMP/htdocs/editorial-interactives/13-02/slideshow/htdocs/index.php",
+		"/Applications/MAMP/htdocs/editorial-interactives/13-02/slideshow/htdocs/slideshow.css",
+		"/Applications/MAMP/htdocs/editorial-interactives/13-01/gun-deaths3/htdocs/gun-deaths.js",
+		"/Users/kirkcp/Library/Application Support/Sublime Text 2/Packages/User/Distraction Free.sublime-settings"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"jigsaw",
+			".min.js",
+			"tooltip",
+			"parent",
+			"atcoordinates",
+			"interactive",
+			"showatcoordinates",
+			"tooltip",
+			"shadow",
+			"geturl",
+			"this",
+			"-min",
+			"self",
+			"addsharebtns",
+			"shareText",
+			"name",
+			"Name",
+			"name",
+			"facebookshare(",
+			"you_solved_share_btns",
+			"acebookshare",
+			"facebookshare",
+			"twittershare",
+			"name",
+			"Name",
+			"name",
+			"Name",
+			"name",
+			"resetelements",
+			"share_btns",
+			"</span>,",
+			"-min",
+			"min",
+			"sendscore",
+			"is_solved",
+			"timer",
+			"interactive_nav_title",
+			"hide",
+			"loadstate(",
+			"routelocation",
+			"disclaimer",
+			"highlight",
+			".hover",
+			"opacity",
+			"-min",
+			"default_shape_style",
+			"unhighlight",
+			"setshape",
+			"-min",
+			".hover(",
+			"hover",
+			".hover",
+			"mouseout",
+			"mousein",
+			"markerhoverout",
+			"mouseout",
+			"tooltip",
+			"resetelements",
+			"script",
+			"selected_",
+			"selected_cds",
+			"facebookshare",
+			"console",
+			"mousemove",
+			"showatcoordinates",
+			"showatdistrict",
+			"tooltip",
+			".show()",
+			"tooltip",
+			"markerHover",
+			"markerhover",
+			"mouseout",
+			"tooltip",
+			"mouseover",
+			"addhoverlisteners",
+			"hover",
+			"mouseovered",
+			"mouseover",
+			"mousein",
+			"this.raphael_object",
+			"hover",
+			"mouseout",
+			"showatcoordinates",
+			"tooltip",
+			"gbcr_transformations",
+			"fauxget",
+			"bbox.width",
+			"set",
+			"boundingClient",
+			"BoundingClient",
+			"boundingClient",
+			"BoundingClient",
+			"boundingClient",
+			"BoundingClient",
+			"boundingClient",
+			"BoundingClient",
+			"boundingClient",
+			"BoundingClient",
+			"boundingClient",
+			"BoundingClient",
+			"boundingClient",
+			"BoundingClient",
+			"boundingClient",
+			"ymost",
+			"yleast",
+			"obj_xleast",
+			"xmost",
+			"xleast",
+			"fauxget",
+			"console",
+			"Shape.",
+			"int_raphael_canvas",
+			"console",
+			"console.log",
+			"fauxgetbbox",
+			"moveshapetocoords",
+			"placeState",
+			"placeShape",
+			"return",
+			"placeShape",
+			"setshape",
+			"moveshapetocoords",
+			"default_shape_style",
+			"moveshapetocoords(",
+			"moveshapetocoords",
+			"moveshape",
+			"lastx",
+			"prex"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "htdocs/jigsaw.js",
+					"settings":
+					{
+						"buffer_size": 31700,
+						"regions":
+						{
+						},
+						"selection":
+						[
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"ids": false
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": "save-only",
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": true,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 20850.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "htdocs/jigsaw.css",
+					"settings":
+					{
+						"buffer_size": 3721,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								106,
+								106
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"ids": false
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": "save-only",
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": true,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "htdocs/index.php",
+					"settings":
+					{
+						"buffer_size": 10733,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1998,
+								1998
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"ids": false
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": "save-only",
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": true,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 789.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.859334159395,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"slideshow",
+				"/Applications/MAMP/htdocs/editorial-interactives/13-02/slideshow/htdocs/slideshow.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 206.0,
+	"status_bar_visible": false
+}

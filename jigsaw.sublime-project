@@ -1,0 +1,17 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "htdocs"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Applications/MAMP/htdocs/editorial-interactives/13-08/jigsaw"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "district_shape_data"
+		}
+	]
+}
