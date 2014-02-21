@@ -1,9 +1,11 @@
-This directory contains instructions for extracting congressional district shape data.
+The files here allow easy extraction of congressional district SVG paths to a javascript variable, filtering out unselected states.
 
 First, upload "113th_U.S._Congress_House_districts_blank.svg" to a service like Ready Set Raphael: http://readysetraphael.com/
 
-This will output javascript that include all the shapes of each congressional district as Raphael paths.
+Ready Set Raphael will output javascript that include all the shapes of each congressional district as Raphael paths. Copy and paste that output into "congressional_districts.txt".
 
-But we don't want all those shapes, and we don't want Raphael to draw them all at once. "Convert_data.py" scans that javascript file and extracts the paths of the specified states to a file called "convert_data_output.js." That file is the basis for "selected_cds.js" in the htdocs directory.
+"Convert_data.py" scans that javascript file and extracts the paths of the specified states to a file called "convert_data_output.js."
 
-It's a rather roundabout way of getting the paths you want -- it would make more sense to have a script that extracts data directly from the .svg file itself instead of requiring the intermediate step of using Ready Set Raphael. However, this appeared the quickest solution at the time.
+That file is the basis for "selected_cds.js" in the htdocs directory.
+
+It's a slightly roundabout solution, but an effective one!
