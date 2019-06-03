@@ -6,7 +6,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 
 <html>
     <head>
-        <script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="htdocs/dependencies/jquery-1.8.2.min.js"></script>
         <title>Jigsaw</title>
     </head>
     <body>
@@ -20,18 +20,18 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 
 
         <!-- paste into RenderHTML-->
-        <link rel="stylesheet" href="jigsaw.css"/>
-        <script type="text/javascript" src="http://www.slate.com/features/2013/lib/raphael-min.js"></script>
+        <link rel="stylesheet" href="htdocs/jigsaw.css"/>
+        <script type="text/javascript" src="htdocs/dependencies/raphael-min.js"></script>
 
         <!-- For more information on $vote_data, see above -->
         <script type="text/javascript">            //<![CDATA[
             var VOTE_DATA = {"MD":{"1":{"percr":70,"percd":30},"2":{"percr":32,"percd":68},"3":{"percr":31,"percd":69},"4":{"percr":21,"percd":79},"5":{"percr":29,"percd":71},"6":{"percr":39,"percd":61},"7":{"percr":21,"percd":79},"8":{"percr":34,"percd":66}},"VA":{"1":{"percr":58,"percd":42},"2":{"percr":54,"percd":46},"3":{"percr":19,"percd":81},"4":{"percr":57,"percd":43},"5":{"percr":56,"percd":44},"6":{"percr":65,"percd":35},"7":{"percr":59,"percd":41},"8":{"percr":32,"percd":68},"9":{"percr":61,"percd":39},"10":{"percr":60,"percd":40},"11":{"percr":37,"percd":63}},"PA":{"1":{"percr":15,"percd":85},"2":{"percr":9,"percd":91},"3":{"percr":57,"percd":43},"4":{"percr":63,"percd":37},"5":{"percr":63,"percd":37},"6":{"percr":57,"percd":43},"7":{"percr":59,"percd":41},"8":{"percr":57,"percd":43},"9":{"percr":62,"percd":38},"10":{"percr":66,"percd":34},"11":{"percr":59,"percd":41},"12":{"percr":52,"percd":48},"13":{"percr":31,"percd":69},"14":{"percr":23,"percd":77},"15":{"percr":57,"percd":43},"16":{"percr":58,"percd":42},"17":{"percr":40,"percd":60},"18":{"percr":64,"percd":36}},"OH":{"1":{"percr":61,"percd":39},"2":{"percr":59,"percd":41},"3":{"percr":28,"percd":72},"4":{"percr":62,"percd":38},"5":{"percr":59,"percd":41},"6":{"percr":53,"percd":47},"7":{"percr":56,"percd":44},"8":{"percr":100,"percd":0},"9":{"percr":24,"percd":76},"10":{"percr":61,"percd":39},"11":{"percr":0,"percd":100},"12":{"percr":63,"percd":37},"13":{"percr":27,"percd":73},"14":{"percr":58,"percd":42},"15":{"percr":62,"percd":38},"16":{"percr":52,"percd":48}},"NC":{"1":{"percr":23,"percd":77},"2":{"percr":57,"percd":43},"3":{"percr":63,"percd":37},"4":{"percr":26,"percd":74},"5":{"percr":58,"percd":42},"6":{"percr":61,"percd":39},"7":{"percr":50,"percd":50},"8":{"percr":54,"percd":46},"9":{"percr":53,"percd":47},"10":{"percr":57,"percd":43},"11":{"percr":57,"percd":43},"12":{"percr":20,"percd":80},"13":{"percr":57,"percd":43}},"MI":{"1":{"percr":50,"percd":50},"2":{"percr":64,"percd":36},"3":{"percr":54,"percd":46},"4":{"percr":65,"percd":35},"5":{"percr":33,"percd":67},"6":{"percr":56,"percd":44},"7":{"percr":55,"percd":45},"8":{"percr":61,"percd":39},"9":{"percr":35,"percd":65},"10":{"percr":70,"percd":30},"11":{"percr":53,"percd":47},"12":{"percr":30,"percd":70},"13":{"percr":14,"percd":86},"14":{"percr":16,"percd":84}},"IA":{"1":{"percr":42,"percd":58},"2":{"percr":43,"percd":57},"3":{"percr":55,"percd":45},"4":{"percr":54,"percd":46}}};            //]]>
         </script>
         <!-- selected_cds.js contains all the path info on the congressional districts in the variable CDS so Raphael can draw them -->
-        <script type="text/javascript" src="selected_cds.js"></script>
+        <script type="text/javascript" src="htdocs/selected_cds.js"></script>
 
         <!-- The script for the game mechanics -->
-        <script type="text/javascript" src="jigsaw.js"></script>
+        <script type="text/javascript" src="htdocs/jigsaw.js"></script>
 
         <div id="interactive">
             <div id="blurbs">
@@ -90,7 +90,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
                                 </p>
                             </td>
                             <td valign="middle" style="vertical-align:middle">
-                                <img id="puzzle_solved_btn_next" src="graphics/btn_next.png"/>
+                                <img id="puzzle_solved_btn_next" src="htdocs/graphics/btn_next.png"/>
                             </td>
                         </tr>
                     </table>
