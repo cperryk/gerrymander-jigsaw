@@ -1,119 +1,399 @@
-
-<!DOCTYPE html
-PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html>
-    <head>
-        <script type="text/javascript" src="htdocs/dependencies/jquery-1.8.2.min.js"></script>
-        <title>Jigsaw</title>
-    </head>
-    <body>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400&amp;display=swap" rel="stylesheet">
+    <script
+      type="text/javascript"
+      src="htdocs/dependencies/jquery-1.8.2.min.js"
+    ></script>
+    <title>Jigsaw</title>
+  </head>
+  <body>
+    <section class="intro">
+      <h1>Gerrymander Jigsaw Puzzle</h1>
 
-        <div id="test_wrapper" style="width:920px;margin-left:auto;margin-right:auto">
+      <p>
+        This is a restoration of <i>Slate</i>'s
+        <a
+          href="http://www.slate.com/articles/news_and_politics/map_of_the_week/2013/08/gerrymandering_jigsaw_puzzle_game_put_the_congressional_districts_back_together.html"
+          >Gerrymander Jigsaw Puzzle</a
+        >
+        from 2013.
+      </p>
 
-        <div id="test_block" style="width:100%;height:100px"></div>
+      <p>
+        As <i>Slate</i>'s website has evolved, many old interactive projects
+        became broken, and fixing them all is infeasible.
+      </p>
 
+      <p>
+        When redistricting began following the 2020 Census, I developed a set of
+        puzzles as a
+        <a
+          href="https://slate.com/tag/gerrymander-puzzles"
+          >follow-up series</a
+        >
+        for <i>Slate</i>. Those are much more mobile-friendly.
+      </p>
 
+      <p class="signature">
+        – Chris Kirk, former Interactives Editor of Slate.com
+      </p>
+    </section>
 
+    <div
+      id="test_wrapper"
+      style="width: 920px; margin-left: auto; margin-right: auto"
+    >
+      <div id="test_block" style="width: 100%; height: 100px"></div>
 
+      <!-- paste into RenderHTML-->
+      <link rel="stylesheet" href="htdocs/jigsaw.css" />
+      <script
+        type="text/javascript"
+        src="htdocs/dependencies/raphael-min.js"
+      ></script>
 
-        <!-- paste into RenderHTML-->
-        <link rel="stylesheet" href="htdocs/jigsaw.css"/>
-        <script type="text/javascript" src="htdocs/dependencies/raphael-min.js"></script>
+      <!-- For more information on $vote_data, see above -->
+      <script type="text/javascript">
+        //<![CDATA[
+        var VOTE_DATA = {
+          MD: {
+            1: { percr: 70, percd: 30 },
+            2: { percr: 32, percd: 68 },
+            3: { percr: 31, percd: 69 },
+            4: { percr: 21, percd: 79 },
+            5: { percr: 29, percd: 71 },
+            6: { percr: 39, percd: 61 },
+            7: { percr: 21, percd: 79 },
+            8: { percr: 34, percd: 66 },
+          },
+          VA: {
+            1: { percr: 58, percd: 42 },
+            2: { percr: 54, percd: 46 },
+            3: { percr: 19, percd: 81 },
+            4: { percr: 57, percd: 43 },
+            5: { percr: 56, percd: 44 },
+            6: { percr: 65, percd: 35 },
+            7: { percr: 59, percd: 41 },
+            8: { percr: 32, percd: 68 },
+            9: { percr: 61, percd: 39 },
+            10: { percr: 60, percd: 40 },
+            11: { percr: 37, percd: 63 },
+          },
+          PA: {
+            1: { percr: 15, percd: 85 },
+            2: { percr: 9, percd: 91 },
+            3: { percr: 57, percd: 43 },
+            4: { percr: 63, percd: 37 },
+            5: { percr: 63, percd: 37 },
+            6: { percr: 57, percd: 43 },
+            7: { percr: 59, percd: 41 },
+            8: { percr: 57, percd: 43 },
+            9: { percr: 62, percd: 38 },
+            10: { percr: 66, percd: 34 },
+            11: { percr: 59, percd: 41 },
+            12: { percr: 52, percd: 48 },
+            13: { percr: 31, percd: 69 },
+            14: { percr: 23, percd: 77 },
+            15: { percr: 57, percd: 43 },
+            16: { percr: 58, percd: 42 },
+            17: { percr: 40, percd: 60 },
+            18: { percr: 64, percd: 36 },
+          },
+          OH: {
+            1: { percr: 61, percd: 39 },
+            2: { percr: 59, percd: 41 },
+            3: { percr: 28, percd: 72 },
+            4: { percr: 62, percd: 38 },
+            5: { percr: 59, percd: 41 },
+            6: { percr: 53, percd: 47 },
+            7: { percr: 56, percd: 44 },
+            8: { percr: 100, percd: 0 },
+            9: { percr: 24, percd: 76 },
+            10: { percr: 61, percd: 39 },
+            11: { percr: 0, percd: 100 },
+            12: { percr: 63, percd: 37 },
+            13: { percr: 27, percd: 73 },
+            14: { percr: 58, percd: 42 },
+            15: { percr: 62, percd: 38 },
+            16: { percr: 52, percd: 48 },
+          },
+          NC: {
+            1: { percr: 23, percd: 77 },
+            2: { percr: 57, percd: 43 },
+            3: { percr: 63, percd: 37 },
+            4: { percr: 26, percd: 74 },
+            5: { percr: 58, percd: 42 },
+            6: { percr: 61, percd: 39 },
+            7: { percr: 50, percd: 50 },
+            8: { percr: 54, percd: 46 },
+            9: { percr: 53, percd: 47 },
+            10: { percr: 57, percd: 43 },
+            11: { percr: 57, percd: 43 },
+            12: { percr: 20, percd: 80 },
+            13: { percr: 57, percd: 43 },
+          },
+          MI: {
+            1: { percr: 50, percd: 50 },
+            2: { percr: 64, percd: 36 },
+            3: { percr: 54, percd: 46 },
+            4: { percr: 65, percd: 35 },
+            5: { percr: 33, percd: 67 },
+            6: { percr: 56, percd: 44 },
+            7: { percr: 55, percd: 45 },
+            8: { percr: 61, percd: 39 },
+            9: { percr: 35, percd: 65 },
+            10: { percr: 70, percd: 30 },
+            11: { percr: 53, percd: 47 },
+            12: { percr: 30, percd: 70 },
+            13: { percr: 14, percd: 86 },
+            14: { percr: 16, percd: 84 },
+          },
+          IA: {
+            1: { percr: 42, percd: 58 },
+            2: { percr: 43, percd: 57 },
+            3: { percr: 55, percd: 45 },
+            4: { percr: 54, percd: 46 },
+          },
+        }; //]]>
+      </script>
+      <!-- selected_cds.js contains all the path info on the congressional districts in the variable CDS so Raphael can draw them -->
+      <script type="text/javascript" src="htdocs/selected_cds.js"></script>
 
-        <!-- For more information on $vote_data, see above -->
-        <script type="text/javascript">            //<![CDATA[
-            var VOTE_DATA = {"MD":{"1":{"percr":70,"percd":30},"2":{"percr":32,"percd":68},"3":{"percr":31,"percd":69},"4":{"percr":21,"percd":79},"5":{"percr":29,"percd":71},"6":{"percr":39,"percd":61},"7":{"percr":21,"percd":79},"8":{"percr":34,"percd":66}},"VA":{"1":{"percr":58,"percd":42},"2":{"percr":54,"percd":46},"3":{"percr":19,"percd":81},"4":{"percr":57,"percd":43},"5":{"percr":56,"percd":44},"6":{"percr":65,"percd":35},"7":{"percr":59,"percd":41},"8":{"percr":32,"percd":68},"9":{"percr":61,"percd":39},"10":{"percr":60,"percd":40},"11":{"percr":37,"percd":63}},"PA":{"1":{"percr":15,"percd":85},"2":{"percr":9,"percd":91},"3":{"percr":57,"percd":43},"4":{"percr":63,"percd":37},"5":{"percr":63,"percd":37},"6":{"percr":57,"percd":43},"7":{"percr":59,"percd":41},"8":{"percr":57,"percd":43},"9":{"percr":62,"percd":38},"10":{"percr":66,"percd":34},"11":{"percr":59,"percd":41},"12":{"percr":52,"percd":48},"13":{"percr":31,"percd":69},"14":{"percr":23,"percd":77},"15":{"percr":57,"percd":43},"16":{"percr":58,"percd":42},"17":{"percr":40,"percd":60},"18":{"percr":64,"percd":36}},"OH":{"1":{"percr":61,"percd":39},"2":{"percr":59,"percd":41},"3":{"percr":28,"percd":72},"4":{"percr":62,"percd":38},"5":{"percr":59,"percd":41},"6":{"percr":53,"percd":47},"7":{"percr":56,"percd":44},"8":{"percr":100,"percd":0},"9":{"percr":24,"percd":76},"10":{"percr":61,"percd":39},"11":{"percr":0,"percd":100},"12":{"percr":63,"percd":37},"13":{"percr":27,"percd":73},"14":{"percr":58,"percd":42},"15":{"percr":62,"percd":38},"16":{"percr":52,"percd":48}},"NC":{"1":{"percr":23,"percd":77},"2":{"percr":57,"percd":43},"3":{"percr":63,"percd":37},"4":{"percr":26,"percd":74},"5":{"percr":58,"percd":42},"6":{"percr":61,"percd":39},"7":{"percr":50,"percd":50},"8":{"percr":54,"percd":46},"9":{"percr":53,"percd":47},"10":{"percr":57,"percd":43},"11":{"percr":57,"percd":43},"12":{"percr":20,"percd":80},"13":{"percr":57,"percd":43}},"MI":{"1":{"percr":50,"percd":50},"2":{"percr":64,"percd":36},"3":{"percr":54,"percd":46},"4":{"percr":65,"percd":35},"5":{"percr":33,"percd":67},"6":{"percr":56,"percd":44},"7":{"percr":55,"percd":45},"8":{"percr":61,"percd":39},"9":{"percr":35,"percd":65},"10":{"percr":70,"percd":30},"11":{"percr":53,"percd":47},"12":{"percr":30,"percd":70},"13":{"percr":14,"percd":86},"14":{"percr":16,"percd":84}},"IA":{"1":{"percr":42,"percd":58},"2":{"percr":43,"percd":57},"3":{"percr":55,"percd":45},"4":{"percr":54,"percd":46}}};            //]]>
-        </script>
-        <!-- selected_cds.js contains all the path info on the congressional districts in the variable CDS so Raphael can draw them -->
-        <script type="text/javascript" src="htdocs/selected_cds.js"></script>
+      <!-- The script for the game mechanics -->
+      <script type="text/javascript" src="htdocs/jigsaw.js"></script>
 
-        <!-- The script for the game mechanics -->
-        <script type="text/javascript" src="htdocs/jigsaw.js"></script>
-
-        <div id="interactive">
-            <div id="blurbs">
-                <span id="IA">
-                    Districts in Iowa tend to be competitive <a href="http://www.timesunion.com/opinion/article/Gerrymandering-Not-in-Iowa-1336319.php" target="_blank">due to strong laws against gerrymandering</a>. By law, the nonpartisan state agency responsible for redistricting must draw districts that are square, rectangular, or hexagonal and match city and county boundaries as much as possible. The agency cannot consider voter registration records and previous election results in the process. In 2012, the state's four congressional seats were split evenly between the two parties, with no candidates winning more than 60 percent of the vote.
-                </span>
-                <span id="MD">
-                    Although Republican U.S. House candidates won about one-third of the vote in Maryland in 2012, they grabbed only one of the eight seats because Democratic state legislators had packed conservative voters into the <span data-target="01" class="districtLink">1<sup>st</sup> District</span> and given the <span data-target="02" class="districtLink">2<sup>nd</sup> District</span>, <span data-target="03" class="districtLink">3<sup>rd</sup> District</span>, and <span data-target="07" class="districtLink">7<sup>th</sup> District</span> pieces of the Baltimore area to make them safely Democratic. The <span data-target="03" class="districtLink">3<sup>rd</sup> District</span> has been <a href="http://www.newrepublic.com/blog/plank/109938/welcome-americas-most-gerrymandered-district" target="_blank">described</a> as "a crazy quilt," "a blood spatter from a crime scene," and a "broken-winged pterodactyl, lying prostrate across the center of the state."
-                </span>
-                <span id="OH">
-                    An Ohio State University political scientist <a href="http://www.thelantern.com/campus/professor-new-ohio-congressional-district-lines-are-grotesque-1.2630389#.UgFg_ivXgvY" target="_blank">said</a> Ohio's adopted plan was "the most grotesque partisan gerrymander that I, as a political scientist, had ever seen." Although Obama beat Romney by two points, Republicans took 12 of the state's 16 House seats because the Republican-controlled state legislature had <a href="http://www.bloomberg.com/news/2013-03-18/republicans-foil-what-most-u-s-wants-with-gerrymandering.html" target="_blank">packed</a> Democratic voters into the <span data-target="03" class="districtLink">3<sup>rd</sup> District</span>, <span data-target="09" class="districtLink">9<sup>th</sup> District</span> and <span data-target="13" class="districtLink">13<sup>th</sup> District</span>.
-                </span>
-                <span id="PA">
-                    In what Real Clear Politics called the "<a href="http://www.realclearpolitics.com/articles/2011/12/14/in_pennsylvania_the_gerrymander_of_the_decade_112404.html" target="_blank">Gerrymander of the Decade</a>," Republican state legislators in Pennsylvania packed the <span data-target="01" class="districtLink">1<sup>st</sup> District</span>, <span data-target="02" class="districtLink">2<sup>nd</sup> District</span>, and <span data-target="14" class="districtLink">14<sup>th</sup> District</span> with Democratic voters while drawing other districts to protect Republican candidates. Although Obama won Pennsylvania by 5 points in 2012, Republicans won 13 of the state's 18 U.S. House seats. 
-                </span>
-                <span id="NC">
-                    Although Democratic House candidates in North Carolina received a majority of the vote, Republican candidates won nine of the state's 13 House seats because the Republican-controlled state legislature had packed the <span data-target="01" class="districtLink">1<sup>st</sup> District</span>, <span data-target="04" class="districtLink">4<sup>th</sup> District</span>, and <span data-target="12"  class="districtLink">12<sup>th</sup> District</span> with Democratic voters. A geographic analysis <a href="https://s3.amazonaws.com/s3.azavea.com/com.redistrictingthenation/pdfs/Redistricting_The_Nation_Addendum.pdf" target="_blank">showed</a> that the <span class="districtLink" data-target="12">12<sup>th</sup> District</span> is the least compact congressional district in the country.
-                </span>
-                <span id="MI">
-                    Obama carried Michigan by nine points. Even so, Democratic House candidates, who themselves received a majority of the vote, only won five of the state's 14 seats. That's because the Republican-controlled state legislature packed as many Detroit-area Democrats as they could into the <span data-target="13" class="districtLink">13<sup>th</sup> District</span> and <span data-target="14" class="districtLink">14<sup>th</sup> District</span>. Democratic candidates in those districts each won more than 80 percent of the vote.
-                </span>
-            </div>
-            <div id="interactive_tooltip"></div>
-            <div id="interactive_nav">
-                <p class="interactive_nav_element" id="interactive_nav_location">
-                    <span id="btn_back" class="interactive_nav_btn">
-                        &#0171;
-                    </span>
-                    <span id="location_readout_here"></span>
-                    <span id="btn_next" class="interactive_nav_btn">
-                        &#0187;
-                    </span>
-                </p>
-                <p class="interactive_nav_element" id="interactive_nav_title">
-                    The Gerrymander Quiz
-                </p>
-                <p class="interactive_nav_element" id="interactive_nav_time">
-                    Time on this Puzzle:
-                    <span id="current_time_here">00:00</span>
-                </p>
-            </div>
-            <div id="int_raphael_canvas_container">
-                <div id="puzzle_begin" class="interactive_footer">
-                    This is a tutorial puzzle, and your time will not count toward your total time. Click and drag each piece to its proper place. Shift and click to select multiple shapes. <!--[if IE]>For an optimal experience, use Chrome, Firefox, or Safari.<![endif]-->
-                </div>
-                <div id="puzzle_disclaimer" class="interactive_footer">
-                    (To fit all congressional districts, the Upper Peninsula, which is part of the 1<sup>st</sup> District, is not shown here.)
-                </div>
-                <div id="puzzle_solved" class="interactive_footer">
-                    <table id="you_solved_p">
-                        <tr>
-                            <td valign="middle" style="vertical-align:middle">
-                                <span id="you_solved"></span>
-                                <p id="you_solved_share_btns">
-                                    <span class="btn_share" id="you_solved_facebook_share">Share on Facebook</span><span class="btn_share" id="you_solved_twitter_share">Share on Twitter</span>
-                                </p>
-                            </td>
-                            <td valign="middle" style="vertical-align:middle">
-                                <img id="puzzle_solved_btn_next" src="htdocs/graphics/btn_next.png"/>
-                            </td>
-                        </tr>
-                    </table>
-                    <p id="puzzle_solved_blurb"></p>
-                </div>
-                <div id="int_raphael_canvas" onmousedown="event.preventDefault ? event.preventDefault() : event.returnValue = false">
-                    <table id="quiz_end" cellpadding="0" cellspacing="0"><tr><td style="vertical-align:middle;height:700px">
-                        <p id="game_over">Complete!</p>
-                        <p id="you_scored">You completed the puzzles in <span id="final_score_here"></span>.</p>
-                        <p id="average_score">Average <strong><em>Slate</em></strong> reader time: <span id="average_score_here">Loading...</span></p>
-                        <p id="share_btns"><span id="share_btns_inner"><span class="btn_share" id="btn_fb_share">Share on Facebook</span> | <span class="btn_share" id="btn_tw_share">Share on Twitter</span></span></p>
-                    </td></tr></table>
-                </div>
-            </div>
+      <div id="interactive">
+        <div id="blurbs">
+          <span id="IA">
+            Districts in Iowa tend to be competitive
+            <a
+              href="http://www.timesunion.com/opinion/article/Gerrymandering-Not-in-Iowa-1336319.php"
+              target="_blank"
+              >due to strong laws against gerrymandering</a
+            >. By law, the nonpartisan state agency responsible for
+            redistricting must draw districts that are square, rectangular, or
+            hexagonal and match city and county boundaries as much as possible.
+            The agency cannot consider voter registration records and previous
+            election results in the process. In 2012, the state's four
+            congressional seats were split evenly between the two parties, with
+            no candidates winning more than 60 percent of the vote.
+          </span>
+          <span id="MD">
+            Although Republican U.S. House candidates won about one-third of the
+            vote in Maryland in 2012, they grabbed only one of the eight seats
+            because Democratic state legislators had packed conservative voters
+            into the
+            <span data-target="01" class="districtLink"
+              >1<sup>st</sup> District</span
+            >
+            and given the
+            <span data-target="02" class="districtLink"
+              >2<sup>nd</sup> District</span
+            >,
+            <span data-target="03" class="districtLink"
+              >3<sup>rd</sup> District</span
+            >, and
+            <span data-target="07" class="districtLink"
+              >7<sup>th</sup> District</span
+            >
+            pieces of the Baltimore area to make them safely Democratic. The
+            <span data-target="03" class="districtLink"
+              >3<sup>rd</sup> District</span
+            >
+            has been
+            <a
+              href="http://www.newrepublic.com/blog/plank/109938/welcome-americas-most-gerrymandered-district"
+              target="_blank"
+              >described</a
+            >
+            as "a crazy quilt," "a blood spatter from a crime scene," and a
+            "broken-winged pterodactyl, lying prostrate across the center of the
+            state."
+          </span>
+          <span id="OH">
+            An Ohio State University political scientist
+            <a
+              href="http://www.thelantern.com/campus/professor-new-ohio-congressional-district-lines-are-grotesque-1.2630389#.UgFg_ivXgvY"
+              target="_blank"
+              >said</a
+            >
+            Ohio's adopted plan was "the most grotesque partisan gerrymander
+            that I, as a political scientist, had ever seen." Although Obama
+            beat Romney by two points, Republicans took 12 of the state's 16
+            House seats because the Republican-controlled state legislature had
+            <a
+              href="http://www.bloomberg.com/news/2013-03-18/republicans-foil-what-most-u-s-wants-with-gerrymandering.html"
+              target="_blank"
+              >packed</a
+            >
+            Democratic voters into the
+            <span data-target="03" class="districtLink"
+              >3<sup>rd</sup> District</span
+            >,
+            <span data-target="09" class="districtLink"
+              >9<sup>th</sup> District</span
+            >
+            and
+            <span data-target="13" class="districtLink"
+              >13<sup>th</sup> District</span
+            >.
+          </span>
+          <span id="PA">
+            In what Real Clear Politics called the "<a
+              href="http://www.realclearpolitics.com/articles/2011/12/14/in_pennsylvania_the_gerrymander_of_the_decade_112404.html"
+              target="_blank"
+              >Gerrymander of the Decade</a
+            >," Republican state legislators in Pennsylvania packed the
+            <span data-target="01" class="districtLink"
+              >1<sup>st</sup> District</span
+            >,
+            <span data-target="02" class="districtLink"
+              >2<sup>nd</sup> District</span
+            >, and
+            <span data-target="14" class="districtLink"
+              >14<sup>th</sup> District</span
+            >
+            with Democratic voters while drawing other districts to protect
+            Republican candidates. Although Obama won Pennsylvania by 5 points
+            in 2012, Republicans won 13 of the state's 18 U.S. House seats.
+          </span>
+          <span id="NC">
+            Although Democratic House candidates in North Carolina received a
+            majority of the vote, Republican candidates won nine of the state's
+            13 House seats because the Republican-controlled state legislature
+            had packed the
+            <span data-target="01" class="districtLink"
+              >1<sup>st</sup> District</span
+            >,
+            <span data-target="04" class="districtLink"
+              >4<sup>th</sup> District</span
+            >, and
+            <span data-target="12" class="districtLink"
+              >12<sup>th</sup> District</span
+            >
+            with Democratic voters. A geographic analysis
+            <a
+              href="https://s3.amazonaws.com/s3.azavea.com/com.redistrictingthenation/pdfs/Redistricting_The_Nation_Addendum.pdf"
+              target="_blank"
+              >showed</a
+            >
+            that the
+            <span class="districtLink" data-target="12"
+              >12<sup>th</sup> District</span
+            >
+            is the least compact congressional district in the country.
+          </span>
+          <span id="MI">
+            Obama carried Michigan by nine points. Even so, Democratic House
+            candidates, who themselves received a majority of the vote, only won
+            five of the state's 14 seats. That's because the
+            Republican-controlled state legislature packed as many Detroit-area
+            Democrats as they could into the
+            <span data-target="13" class="districtLink"
+              >13<sup>th</sup> District</span
+            >
+            and
+            <span data-target="14" class="districtLink"
+              >14<sup>th</sup> District</span
+            >. Democratic candidates in those districts each won more than 80
+            percent of the vote.
+          </span>
         </div>
-        <p id="interactive_attribution">* Voting percentages in tooltips are the percentages of the total votes for Democratic and Republican candidates. Source: Clerk of the House of Representatives</p>       
-    
-    <!-- STOP PASTE -->
+        <div id="interactive_tooltip"></div>
+        <div id="interactive_nav">
+          <p class="interactive_nav_element" id="interactive_nav_location">
+            <span id="btn_back" class="interactive_nav_btn"> &#0171; </span>
+            <span id="location_readout_here"></span>
+            <span id="btn_next" class="interactive_nav_btn"> &#0187; </span>
+          </p>
+          <p class="interactive_nav_element" id="interactive_nav_title">
+            The Gerrymander Quiz
+          </p>
+          <p class="interactive_nav_element" id="interactive_nav_time">
+            Time on this Puzzle:
+            <span id="current_time_here">00:00</span>
+          </p>
+        </div>
+        <div id="int_raphael_canvas_container">
+          <div id="puzzle_begin" class="interactive_footer">
+            This is a tutorial puzzle, and your time will not count toward your
+            total time. Click and drag each piece to its proper place. Shift and
+            click to select multiple shapes.
+            <!--[if IE
+              ]>For an optimal experience, use Chrome, Firefox, or Safari.<!
+            [endif]-->
+          </div>
+          <div id="puzzle_disclaimer" class="interactive_footer">
+            (To fit all congressional districts, the Upper Peninsula, which is
+            part of the 1<sup>st</sup> District, is not shown here.)
+          </div>
+          <div id="puzzle_solved" class="interactive_footer">
+            <table id="you_solved_p">
+              <tr>
+                <td valign="middle" style="vertical-align: middle">
+                  <span id="you_solved"></span>
+                  <p id="you_solved_share_btns">
+                    <span class="btn_share" id="you_solved_facebook_share"
+                      >Share on Facebook</span
+                    ><span class="btn_share" id="you_solved_twitter_share"
+                      >Share on Twitter</span
+                    >
+                  </p>
+                </td>
+                <td valign="middle" style="vertical-align: middle">
+                  <img
+                    id="puzzle_solved_btn_next"
+                    src="htdocs/graphics/btn_next.png"
+                  />
+                </td>
+              </tr>
+            </table>
+            <p id="puzzle_solved_blurb"></p>
+          </div>
+          <div
+            id="int_raphael_canvas"
+            onmousedown="event.preventDefault ? event.preventDefault() : event.returnValue = false"
+          >
+            <table id="quiz_end" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="vertical-align: middle; height: 700px">
+                  <p id="game_over">Complete!</p>
+                  <p id="you_scored">
+                    You completed the puzzles in
+                    <span id="final_score_here"></span>.
+                  </p>
+                  <p id="average_score">
+                    Average <strong><em>Slate</em></strong> reader time:
+                    <span id="average_score_here">Loading...</span>
+                  </p>
+                  <p id="share_btns">
+                    <span id="share_btns_inner"
+                      ><span class="btn_share" id="btn_fb_share"
+                        >Share on Facebook</span
+                      >
+                      |
+                      <span class="btn_share" id="btn_tw_share"
+                        >Share on Twitter</span
+                      ></span
+                    >
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <p id="interactive_attribution">
+        * Voting percentages in tooltips are the percentages of the total votes
+        for Democratic and Republican candidates. Source: Clerk of the House of
+        Representatives
+      </p>
 
-
-
-
-
-    </div><!-- test wrapper -->
-    </body>
+      <!-- STOP PASTE -->
+    </div>
+    <!-- test wrapper -->
+  </body>
 </html>

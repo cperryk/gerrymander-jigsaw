@@ -1,3 +1,27 @@
+body {
+  font-family: 'Source Sans Pro', verdana, sans-serif;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.intro {
+  line-height: 1.5em;
+  max-width: 1038px;
+  margin: 0 auto 2em auto;
+}
+
+.signature {
+  text-align: right;
+}
+
 #interactive {
   width: 920px;
   font-family: 'Verdana', sans-serif;
